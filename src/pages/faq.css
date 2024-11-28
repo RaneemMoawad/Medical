@@ -1,0 +1,79 @@
+.faq-section{
+    margin-top: 50px;
+}
+.taqseem{
+    display: flex;
+    justify-content: center;
+}
+
+
+div .dropdown button{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+.dropdown button::after{
+    position: absolute;
+    margin-left: 90%;
+}
+
+div .dropdown{
+    margin-bottom: 30px;
+}
+.left-section button,
+.right-section button{
+    background-color: var(--main-color) !important;
+    padding: 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+.news-section{
+    margin-top: 100px;
+    width: 100%;
+}
+.sections{
+    width: 100%;
+}
+
+
+.news-slider{
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.card{
+    border: 2px solid #ede9e9 !important;
+    padding: 30px;
+    transition: all ease 1s;
+    max-width: 20rem ;
+}
+.card:hover{
+    border: none !important;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.9);
+}
+
+.accordion-item{
+    background-color: rgba(86,90,207,.1) !important;
+}
+button.collapsed{
+    background-color: #565acf;
+    color: white;
+}
+.accordion-button:not(.collapsed){
+    background-color: #f17732 !important;
+    color: white !important;
+}
+
+.accordion-item {
+    margin-bottom: 15px; /* يمكن تغيير القيمة حسب الحاجة */
+}
+
+
+button.accordion-button .collapsed::after{
+    color: white !important;
+}  

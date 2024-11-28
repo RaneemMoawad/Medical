@@ -1,0 +1,586 @@
+.main-about {
+  margin-top: 150px;
+}
+.sec-row {
+  margin-top: 30px;
+  display: flex;
+}
+img.doct {
+  display: inline-block;
+  margin-left: 15px !important;
+  /* border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; */
+
+  border-radius: 70px;
+  border-top-right-radius: 0 !important;
+}
+img.doctors {
+  display: inline-block;
+  border-radius: 70px;
+  border-top-left-radius: 0 !important;
+  margin-top: 30px;
+}
+img.baby {
+  display: inline-block;
+  border-radius: 50px;
+  border-bottom-left-radius: 0 !important;
+  margin-top: -20px;
+  margin-left: 50px;
+  height: 200px;
+}
+.experience {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--main-color);
+  position: relative;
+  background-color: #e6e7ff;
+  border-radius: 50px;
+  border-bottom-right-radius: 0px !important;
+  width: 35%;
+  height: 200px;
+  padding: 30px;
+}
+.exp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #565acf;
+  font-size: 6rem !important;
+  font-weight: bold !important;
+}
+.experience::after {
+  content: "";
+  position: absolute;
+  border: 3px solid #565acf;
+  height: 200px;
+  width: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 50px;
+  border-bottom-right-radius: 0px !important;
+
+  /* content: "";
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 50px;
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    top: 15px;
+    left: -15px;
+    z-index: -1;
+    border-bottom-right-radius: 0px !important; */
+}
+
+.about-us {
+  background-image: url("../pic/hash.png");
+  margin-bottom: 15px;
+  width: 15%;
+  font-weight: bold;
+  font-size: 500;
+  color: var(--second-color);
+}
+
+.great-place {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.about-desc {
+  color: #716a6a;
+  word-spacing: 2px;
+  font-weight: bold;
+}
+
+.sections-one,
+.sections-two {
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.sections-one li,
+.sections-two li {
+  display: flex;
+  flex: 1;
+  width: 50% !important;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.sections-one li {
+  border: 2px solid aquamarine;
+}
+.sections-two li {
+  border: 2px solid rgb(231, 166, 187);
+}
+
+.sections-one li::after,
+.sections-two li::after {
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 100%;
+  z-index: -1;
+  left: 0px;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.sections-one li::after {
+  background-color: rgba(127, 255, 212, 0.3);
+}
+.sections-two li::after {
+  background-color: rgba(231, 166, 187, 0.3);
+}
+.sections-one li span,
+.sections-two li span {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.sections-one li:hover .amb,
+.sections-one li:hover .bed,
+.sections-two li:hover .eye,
+.sections-two li:hover .fasy {
+  animation: move 0.02s infinite alternate;
+  animation-iteration-count: 30;
+}
+.read-more {
+  margin-top: 30px;
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  transition: all ease 0.5s !important;
+  height: 55px;
+}
+.read-more:hover {
+  background-color: rgb(162, 162, 228) !important;
+  border-color: rgb(162, 162, 228) !important;
+}
+.m-l {
+  margin-left: 15px;
+}
+.amb,
+.bed,
+.eye,
+.fasy {
+  font-size: 1.7rem;
+}
+
+.cards-back {
+  background-color: rgba(86, 90, 207, 0.1);
+  margin-top: 150px;
+  display: flex;
+}
+.cards {
+  display: flex;
+  margin: 100px auto;
+}
+.cards-back ul {
+  display: flex;
+}
+
+.cards li {
+  background-color: white;
+  margin-left: 30px;
+  padding: 30px;
+  border-radius: 35px;
+  position: relative;
+  transition: all ease 1s;
+}
+.frist-li {
+  margin-left: 0 !important;
+}
+.cards li h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: var(--second-color);
+}
+.cards li span {
+  color: var(--main-color);
+  font-weight: 650;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.cards li p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #716a6a;
+}
+
+.cards li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 2px solid blue;
+  height: 100%;
+  bottom: 15px;
+  right: 15px;
+  z-index: -1;
+  border-radius: 30px;
+}
+.cards li:hover {
+  background-color: blue;
+}
+.cards li:hover h2,
+.cards li:hover span,
+.cards li:hover p {
+  color: white;
+}
+.doctors-section {
+  width: 100%;
+}
+
+.our-doctors,
+.latest-news {
+  background-image: url("../pic/hash.png");
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 10%;
+  color: var(--second-color);
+  font-size: 1.3rem;
+  font-weight: 650;
+  text-transform: capitalize;
+}
+.doctors-desc h3,
+.news-section h3 {
+  display: flex;
+  margin: 15px auto;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.doctors-cards {
+  display: flex;
+  margin-top: 150px;
+}
+
+.doctors-cards li {
+  margin-left: 100px;
+  border: 2px solid #add7dd;
+  border-radius: 5px;
+  width: 33%;
+  height: 25%;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 15px;
+  position: relative;
+  transition: all ease 0.7s;
+}
+/* .doctors-cards li:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); /* مثال على shadow */
+
+.doctors-cards li::before {
+  content: "";
+  position: absolute;
+  background-image: url("../pic/sodasi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: -2px;
+  background-size: 15rem;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0px;
+  right: 2px;
+  z-index: -1;
+}
+
+.doctors-cards li img {
+  mask-image: url("../pic/mask.png");
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  width: 130px;
+}
+
+.doctors-cards li h4 {
+  margin-top: 60px;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.doctors-cards li span {
+  color: var(--second-color);
+  font-weight: 600;
+}
+.doctors-icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 100%;
+}
+.doctors-icon a {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white !important;
+  background-color: var(--main-color);
+  border: 50px solid (--main-color);
+  width: 15%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+}
+.doctors-icon a:hover {
+  background-color: #716a6a;
+}
+.Testimonial-section {
+  width: 100%;
+  height: 100vh;
+}
+.Testimonial-section span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.left-sec {
+  width: 100%;
+  height: 500px;
+}
+.left-sec ul {
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+.sodasi-background {
+  background-image: url("../pic/sodasi.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.dr1,
+.dr2,
+.dr3,
+.dr4,
+.dr5,
+.dr6 {
+  border-radius: 50%;
+  max-width: 75px;
+}
+
+.photo1,
+.photo6 {
+  display: flex;
+  margin-left: 35%;
+}
+.photo2,
+.photo3 {
+  display: inline-block;
+  position: relative;
+}
+.dr2 {
+  display: inline-block;
+  position: absolute;
+  left: 1;
+}
+.dr3 {
+  margin-left: 69%;
+}
+.photo4-5 {
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+}
+.dr4 {
+  position: absolute;
+  margin-left: -30px;
+}
+.dr5 {
+  margin-left: 350px;
+}
+.dr6 {
+  margin-top: 30px;
+}
+
+.card-img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.raqam {
+  color: black;
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* موبايل صغير */
+@media screen and (max-width: 480px) {
+  .about-section {
+    margin-top: 0;
+  }
+  .cards {
+    padding: 0;
+    display: block !important;
+  }
+  .cards li {
+    margin-bottom: 15%;
+  }
+  .our-doctors {
+    width: 100% !important;
+  }
+
+  ul.doctors-cards {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .doctors-cards li {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 10%;
+  }
+  .slick-slider {
+    width: 100%;
+  }
+  .slick-list {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .slick-track {
+    display: block;
+    width: 100%;
+  }
+  .cardoda.card {
+    width: 100% !important;
+  }
+}
+
+/* موبايل متوسط / كبير */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-section {
+    margin-top: 0;
+  }
+  .cards {
+    padding: 0;
+    display: block !important;
+  }
+  .cards li {
+    margin-bottom: 15%;
+  }
+  .our-doctors {
+    width: 100% !important;
+  }
+
+  ul.doctors-cards {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .doctors-cards li {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 10%;
+  }
+  .slick-slider {
+    width: 100%;
+  }
+  .slick-list {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .slick-track {
+    display: block;
+    width: 100%;
+  }
+  .cardoda.card {
+    width: 100% !important;
+  }
+}
+
+/* تابلت */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about-section {
+    margin-top: 0;
+  }
+  .cards {
+    padding: 0;
+  }
+  .cards li {
+    margin-bottom: 15%;
+  }
+  .our-doctors {
+    width: 100% !important;
+  }
+  ul.doctors-cards {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .doctors-cards li {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 10%;
+  }
+  .slick-slider {
+    width: 100%;
+  }
+  .slick-list {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .slick-track {
+    display: block;
+    width: 100%;
+  }
+  .cardoda.card {
+    width: 100% !important;
+  }
+}
+
+/* لابتوب */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .our-doctors {
+        width: 30% !important;
+      }
+    
+      ul.doctors-cards {
+        display: flex;
+        width: 100%;
+        padding: 0;
+      }
+      .doctors-cards li {
+        margin-left: 5% !important;
+      }
+      .slick-slider {
+        width: 100%;
+      }
+      .slick-list {
+        margin: 0 !important;
+        width: 100%;
+      }
+      .slick-track {
+        display: block;
+        width: 100%;
+      }
+      .cardoda.card {
+        width: 100% !important;
+      }}
+
+/* شاشات كبيرة */
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+    .our-doctors {
+        width: 15% !important;
+      }}

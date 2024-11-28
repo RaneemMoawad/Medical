@@ -1,0 +1,198 @@
+.total{
+    padding-top: 30px;
+    padding-bottom: 150px;
+    
+}
+.half{
+position: relative;
+}
+.half::before{
+    content: "";
+    position: absolute;
+    width: 100% !important;
+    height: 30%;
+    background-image: url(../pic/big\ waves.png);
+    z-index: -1;
+    opacity: 1;
+}
+.form-and-desc{
+    display: flex;
+    box-shadow: 0px 0px 5px #333;
+    width: 80%;
+    margin: 0 auto !important;
+    border: 4px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.inputs{
+    height: 70px;
+    margin-bottom: 30px;
+}
+.mb{
+    margin-bottom: 30px;
+}
+form button{
+    width: 100%;
+    background-color: var(--second-color) !important;
+    border: none !important;
+    transition: all ease-in 0.5s !important;
+}
+form button:hover{
+    background-color: rgb(244, 160, 95) !important;
+}
+.form-selection:hover{
+    cursor: pointer !important;
+}
+
+.contact-us-desc{
+    display: flex;
+    background-image: url('../pic/doctors.jpg');
+    z-index: -1;
+    opacity: 0.9;
+    position: relative;
+    margin-left: 30px;
+    max-width: 100% !important;
+    border-radius: 25px;
+
+}
+.layer{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(28, 8, 181);
+    opacity: 0.82;
+    border-radius: 25px;
+}
+.desc{
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    padding-left: 15px;
+    padding-top: 30px;
+    
+}
+.desc h4{
+    color: azure;
+    margin-bottom: 30px;
+}
+.location,
+.form-card,
+.follow-form{
+    display: flex;
+    color: azure;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    max-width: 80%;
+}
+.location-icon,
+.vcard-icon,
+.globe-icon{
+    margin-right: 15px;
+}
+.desc p,
+.account{
+    color: azure;
+    margin-top: 15px;
+
+}
+.websites{
+    display: flex;
+    margin-left: 0;
+}
+.websites a{
+    color: azure;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    
+}
+.cards{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.card-cards{
+    display: flex;
+    width: 900px;
+    padding: 30px;
+   margin-left: 100px;
+   height: 200px !important;
+   position: relative;
+
+}
+.card-photo{
+    display: flex;
+    /* font-size: 0.5rem !important; */
+    max-width: 50px;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0px);
+
+    }
+    50%{
+        transform: translate(8px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.card-cards:hover .card-photo{
+    animation: move 0.1s  ;
+    animation-iteration-count: 4;
+}
+.telephone{
+    box-shadow: 2px 2px 5px #c4c4c4;
+
+}
+
+.email{
+    border: 0.1px solid rgb(239, 154, 154) !important;
+    box-shadow: 2px 2px 30px #c4c4c4;
+
+}
+.address{
+    border: 0.1px solid rgb(114, 221, 240) !important;
+    box-shadow: 2px 2px 30px #c4c4c4;
+
+}
+.card-title{
+    color: var(--main-color) !important;
+    padding-top: 15px;
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+}
+.card-text{
+    font-size: 15px;
+    color: #4f4d4d;
+    font-weight: 500;
+}
+
+
+.card-cards:after {
+    border-radius: 50%;
+    content: "";
+    height: 60px;
+    position: absolute;
+    right: 230px;
+    top:13px;
+    width: 60px;
+    z-index: 1;
+}
+.address:after{
+    background-color: rgba(0, 123, 255, 0.1); /* خلفية شبه شفافة */
+}
+.email:after{
+    background-color:  rgba(239, 154, 154, 0.2); /* خلفية شبه شفافة */
+}
+.telephone:after{
+    background-color: rgba(96, 104, 109, 0.2); /* خلفية شبه شفافة */
+}
+

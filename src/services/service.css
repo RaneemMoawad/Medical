@@ -1,0 +1,234 @@
+.service-section{
+    margin-top: 60px;
+
+}
+
+.service-section ul li {
+    display: flex;
+    margin-top: 30px;
+}
+.service-section ul li .card{
+    background-image: url('../pic/backboka.png');
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+@keyframes move{
+    0%{
+        transform: translateX(0);
+
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    
+    100%{
+        transform: translateX(100px);
+    }
+}
+.service-section ul li .card:hover .icons-cards path{
+    width: 80px;
+    animation: move 0.05s 8 alternate;
+    background-color: brown;
+
+}
+.frist-row-cards button,
+.sec-row-cards button{
+    background-color: #e1e2f6 ;
+    color: var(--main-color);
+    transition: all ease 0.3s;
+    border: none;
+
+}
+
+.icons-cards{
+    font-size: 2.5rem;
+    border: 2px solid #ecebeb;
+    border-radius: 15px;
+    width: 80px;
+    padding: 30px;
+    background-color: white;
+    transition: all ease 0.8s;
+}
+
+.cards-back{
+    background-color: rgba(86, 90, 207, .1);    
+    margin-top: 150px;
+    display: flex;
+}
+.cards{
+    margin: 100px auto;
+}
+
+.cards li{
+    background-color: white;
+    margin-left: 30px;
+    padding: 30px;
+    border-radius: 35px;
+    position: relative;
+}
+.frist-li{
+    margin-left: 0 !important;
+}
+.cards li h2{
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--second-color);
+}
+.cards li span{
+    color: var(--main-color);
+    font-weight: 650;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.cards li p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #716a6a;
+}
+
+.cards li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 2px solid blue;
+    height: 100%;
+    bottom: 15px;
+    right: 15px;
+    z-index: -1;
+    border-radius: 30px;
+}
+.cards li:hover{
+    background-color: blue;
+}
+.cards li:hover h2,
+.cards li:hover span,
+.cards li:hover p
+{
+    color: white;
+
+}
+.doctors-section{
+    width: 100%;
+}
+
+.our-doctors,
+.latest-news{
+    background-image: url('../pic/hash.png');
+    display:flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 10%;
+    color: var(--second-color);
+    font-size: 1.3rem;
+    font-weight: 650;
+    text-transform: capitalize;
+    
+}
+.doctors-desc h3,
+.news-section h3{
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.doctors-cards{
+    display: flex;
+    margin-top: 100px;
+}
+
+.doctors-cards li{
+    margin-left: 100px;
+    border: 2px solid #add7dd;
+    border-radius: 5px;
+    width: 33%;
+    height: 25%;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 15px;
+    position: relative;
+    transition: all ease 0.7s;
+    
+}
+/* .doctors-cards li:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); /* مثال على shadow */
+    
+
+.doctors-cards li::before{
+    content: "";
+    position: absolute;
+    background-image: url('../pic/sodasi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: -2px ;
+    background-size: 15rem;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0px;
+    right: 2px;
+    z-index: -1;
+}
+
+
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    .frist-row-cards,
+    .sec-row-cards{
+        display: block !important;
+    }
+    .frist-row-cards .card,
+    .sec-row-cards .card{
+        width: 100% ;
+        margin-left: 0 !important;
+        margin-bottom: 10%;
+    }
+    .mohem{
+        display: flex !important;
+        justify-content: center;
+        text-align: center;
+        padding-left: 15% !important;
+    }
+  }
+  
+  /* موبايل متوسط / كبير */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  
+    .frist-row-cards,
+    .sec-row-cards{
+        display: block !important;
+    }
+    .frist-row-cards .card,
+    .sec-row-cards .card{
+        width: 100% ;
+        margin-left: 0 !important;
+        margin-bottom: 10%;
+    }
+    .mohem{
+        display: flex !important;
+        justify-content: center;
+        text-align: center;
+        padding-left: 15% !important;
+    }  }
+  
+  /* تابلت */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    
+    .frist-row-cards .card,
+    .sec-row-cards .card{
+        width: 15% ;
+        margin-left: 3% !important;
+    }
+    .mohem{
+        width: 100% !important;
+        padding-left: 5%;
+    }
+  
+  }
+  
+

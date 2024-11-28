@@ -1,0 +1,180 @@
+.banner {
+  display: flex;
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  margin-top: 0;
+  height: 60vh;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../pic/back.jpg");
+  background-size: cover; /* Or any other desired value */
+  background-position: center;
+  opacity: 1; /* Set opacity here */
+  z-index: -1; /* Make sure the background is behind the content */
+}
+.banner-title {
+  width: 100%;
+}
+
+.banner-title h2 {
+  width: 100%;
+  display: flex;
+  font-size: 5rem;
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 80px auto 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title li {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  margin: 15px 50px;
+  text-transform: capitalize;
+  color: azure;
+  align-items: center;
+  justify-content: center;
+}
+.home-icon {
+  color: azure;
+  margin-left: 15px;
+}
+.banner-title li a {
+  color: azure;
+}
+.middle {
+  display: flex;
+  margin-right: 15%;
+  background-color: #565acf;
+  border: 1px solid #565acf;
+  border-radius: 4px;
+  height: 50px;
+  align-items: center;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.banner-contact-us {
+  margin-left: 5px;
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+  .banner-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 1;
+  }
+  .banner-title h2 {
+    width: 100%;
+    margin-left: 5% !important;
+    font-size: 2.5rem !important;
+  }
+  .banner-title li {
+    width: 100%;
+  }
+  .middle {
+    max-width: 250px !important;
+  }
+}
+
+/* موبايل متوسط / كبير */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 1;
+  }
+  .banner-title h2 {
+    width: 100%;
+    margin-left: 5% !important;
+    font-size: 2.8rem !important;
+  }
+  .banner-title li {
+    width: 100%;
+  }
+  .middle {
+    max-width: 250px !important;
+  }
+}
+
+/* تابلت */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .banner-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 1;
+  }
+  .banner-title h2 {
+    width: 100%;
+    margin-left: 5% !important;
+    font-size: 4rem !important;
+  }
+  .banner-title li {
+    width: 100%;
+  }
+  .middle {
+    max-width: 250px !important;
+  }
+}
+
+/* لابتوب */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .banner-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 1;
+  }
+  .banner-title h2 {
+    width: 100%;
+    margin-left: 5% !important;
+    font-size: 4rem !important;
+  }
+  .banner-title li {
+    width: 100%;
+  }
+  .middle {
+    max-width: 250px !important;
+    margin-left: 15%;
+  }
+}
+
+/* شاشات كبيرة */
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .banner-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 1;
+  }
+  .banner-title h2 {
+    width: 100%;
+    margin-left: 3% !important;
+    font-size: 4rem !important;
+  }
+  .banner-title li {
+    width: 100%;
+  }
+  .middle {
+    max-width: 250px !important;
+    margin-left: 15%;
+  }
+}

@@ -1,0 +1,31 @@
+.taht{
+    margin-bottom: 150px;
+    margin-top: 30px !important;
+}
+
+
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    /* CSS هنا */
+  }
+  
+  /* موبايل متوسط / كبير */
+  @media (max-width: 768px) {
+    /* CSS هنا */
+  }
+  
+  /* تابلت */
+  @media (max-width: 992px) {
+    /* CSS هنا */
+  }
+  
+  /* لابتوب */
+  @media (max-width: 1200px) {
+    /* CSS هنا */
+  }
+  
+  /* شاشات كبيرة */
+  @media (max-width: 1600px) {
+    /* CSS هنا */
+  }

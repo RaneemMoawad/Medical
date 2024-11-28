@@ -1,0 +1,247 @@
+html{
+  scroll-behavior: smooth;
+}
+ :root{
+  --main-color:#1f2278;
+  --second-color:#f17732;
+  --btn-color:#494db0;
+
+ }
+
+ html, body {
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  
+
+}
+
+section, footer, header{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 25px 0px;
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+span{
+  display: block;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+button{
+  text-align: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 4px;
+}
+p{
+  line-height: 28px;
+}
+input{
+  box-sizing: border-box;
+  border: 1px solid azure;
+  text-align: left;
+  padding: 5px 15px;
+  color: black;
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+
+}
+/* .page-bottom{
+  background-image: url('../src/pic/back.jpg') ;
+  width: 100%;
+  background-repeat: no-repeat;
+  
+} */
+.page-bottom {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  scroll-behavior: unset;
+}
+
+.page-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./pic/back.jpg');
+  background-size: cover; /* Or any other desired value */
+  background-position: center;
+  opacity: 1; /* Set opacity here */
+  z-index: -1; /* Make sure the background is behind the content */
+}
+.footer-p{
+  margin-top: 15px;
+  color: #4b4a4a;
+  font-weight: 490;
+  text-shadow: 0.5px 0.5px 5px #333;
+}
+.footer-contact{
+  display: flex;
+  margin-top: 30px;
+}
+.i-phone{
+  font-size: 30px;
+  background-color: var(--second-color);
+  border: 15px solid var(--second-color);
+  border-bottom-right-radius: 0 !important;
+  border-radius: 50px;
+  color: azure;
+  margin-left: 0;
+}
+.footer-call{
+  margin-left: 25px;
+
+}
+.footer-contact-us{
+  font-weight: 500;
+  color: var(--second-color);
+}
+.footer-number{
+  display: flex;
+  color: var(--main-color);
+
+}
+.footer-second span,
+.footer-three span,
+.footer-four span{
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 700;
+
+}
+.footer-second img,
+.footer-three img,
+.footer-four img{
+  width: 90px;
+  height: 8px;
+}
+.page-bottom li {
+  line-height: 30px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.page-bottom a{
+  color: #555555;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.page-bottom a:hover{
+  color: var(--main-color);
+}
+.options{
+  margin-top: 15px;
+}
+.footer-four form{
+  width: 100%;
+  margin-top: 15px;
+}
+.footer-four form input{
+  display: block;
+  width: 65%;
+  outline: none;
+}
+.footer-four form button{
+  margin-top: 15px;
+  width: 65%;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px var(--second-color);
+  color: azure;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.iconss{
+  margin-top: 15px;
+  display: inline-block;
+}
+.iconss a{
+  display: inline-block;
+  margin-left: 35px;
+  font-size: 30px;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #d8d2d2;
+}
+.final{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.ThemeTrades{
+  color: var(--second-color);
+}
+
+.wave-three,
+.wave-two,
+.za{
+  display: inline-block;
+  max-width: 150px;
+  height: 100px;
+}
+.za{
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  animation: rotate 4s infinite alternate;
+  
+}
+
+.wave-three{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  animation: move 2s infinite alternate;
+
+}
+.wave-two{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  animation: move 2S infinite alternate;
+
+}
+
+@keyframes move{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+}
+
+@keyframes rotate{
+  form{ transform: rotate(0deg);}
+  to {
+    transform: rotate(180deg);
+  }
+}

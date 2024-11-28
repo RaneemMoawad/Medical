@@ -1,0 +1,154 @@
+.error {
+  width: 100%;
+}
+.elwidth {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.big-title h2 {
+  font-size: 9rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.big-title h2 span {
+  width: 150px;
+  background-image: url("../pic/error.4b5472f14025469a16d7.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.title-span {
+  max-width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.error-section p {
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin: auto;
+  font-weight: 600;
+  color: #03030377;
+  margin: 30px auto;
+}
+.error-section button {
+  display: inline-block;
+  line-height: 50%;
+  margin: auto 15px;
+  width: 200px;
+  height: 60px;
+  background-color: #565acf;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+.error-section button:hover {
+  background-color: #1e2068;
+}
+.bback {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.back {
+  flex: 0.1;
+}
+.back-home {
+  flex: 0.15;
+}
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+  .bback {
+    display: block;
+  }
+  .bback button {
+    height: 50px;
+  }
+  .back {
+    margin-bottom: 5% !important;
+  }
+  .title-span {
+    font-size: 1.5rem;
+  }
+  .error-section p {
+    font-size: 0.7rem;
+  }
+  .big-title h2 {
+    font-size: 6rem !important;
+  }
+  .emojy {
+    width: 30% !important;
+  }
+}
+@media screen and (min-width: 482px) and (max-width: 600px) {
+  .back-home {
+    flex: 0.5 !important;
+  }
+}
+
+/* موبايل متوسط / كبير */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .back-home {
+    flex: 0.4;
+  }
+  .title-span {
+    font-size: 1.5rem;
+  }
+  .error-section p {
+    font-size: 0.7rem;
+  }
+  .big-title h2 {
+    font-size: 6rem !important;
+  }
+  .emojy {
+    width: 19% !important;
+  }
+}
+
+/* تابلت */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .back-home {
+    flex: 0.4;
+  }
+  .title-span {
+    font-size: 1.5rem;
+  }
+  .error-section p {
+    font-size: 0.7rem;
+  }
+  .big-title h2 {
+    font-size: 6rem !important;
+  }
+  .emojy {
+    max-width: 15%;
+  }
+}
+
+/* لابتوب */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .back-home {
+    flex: 0.2;
+  }
+  .title-span {
+    font-size: 1.5rem;
+  }
+  .error-section p {
+    font-size: 0.7rem;
+  }
+  .big-title h2 {
+    font-size: 6rem !important;
+  }
+  .emojy {
+    max-width: 10%;
+  }
+}

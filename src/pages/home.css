@@ -1,0 +1,1054 @@
+.start-home {
+  margin-top: 150px !important;
+}
+
+.home-page {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-image: url("../pic/background.jpg");
+}
+
+.left {
+  float: left;
+  /* background-color: yellow; */
+}
+.left span {
+  font-size: 1.5rem;
+  background-image: url("../pic/hash.png");
+  display: inline-block;
+  background-position: 50%;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #565acf;
+}
+.cycle {
+  display: flex;
+  margin-top: 0;
+  margin-left: 300px;
+  animation: mover 0.8s infinite alternate;
+}
+.home-title {
+  font-weight: 700;
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-top: 15px;
+}
+.read-more {
+  display: flex;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 15px;
+  text-align: center;
+  color: azure !important;
+  font-weight: 500 !important;
+  background-color: var(--second-color) !important;
+}
+
+.icon {
+  display: flex;
+  max-width: 130px !important;
+}
+.send {
+  position: absolute;
+  top: 500px;
+  left: 90px;
+  animation: mover 0.8s infinite alternate;
+}
+.plus {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+}
+.clean {
+  overflow: hidden;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.right {
+  display: flex;
+  float: left;
+  /* background-color: blue; */
+  justify-content: space-between;
+}
+.doctor {
+  display: flex;
+  max-width: 500px;
+  margin-left: 30%;
+  margin-top: -11px;
+  animation: mover 0.8s infinite alternate;
+}
+.square {
+  animation: mover 0.8s infinite alternate;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  display: flex;
+}
+.pd-y {
+  padding-top: 120px;
+}
+
+.working-section {
+  width: 100%;
+}
+.three-cards {
+  width: 90%;
+}
+.three-cards li {
+  width: 350px;
+  height: 350px;
+  margin-left: 15px;
+  padding: 30px;
+}
+
+.working-process {
+  background-image: url("../pic/hash.png");
+  display: flex;
+  justify-content: center;
+  margin: 200px auto 0 auto;
+  width: 18%;
+  color: var(--second-color);
+  font-size: 1.3rem;
+  font-weight: 650;
+  text-transform: capitalize;
+}
+.working h3 {
+  display: flex;
+  margin: 15px auto;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.all-cards {
+  display: flex;
+  justify-content: center;
+}
+.all-cards li {
+  background-color: white;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.all-cards li:hover {
+  background-color: var(--second-color);
+}
+
+.all-cards li h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--second-color);
+  position: relative;
+  opacity: 0.3;
+}
+.all-cards li h2::before {
+  content: attr(data-content);
+  position: absolute;
+  top: -10px; /* للتحكم في المسافة الرأسية */
+  left: 0px; /* للتحكم في المسافة الأفقية */
+  color: rgba(86, 166, 246, 0); /* لون باهت */
+  z-index: 1;
+  -webkit-text-stroke: 1.9px rgba(247, 82, 31, 1); /* تحديد سماكة ولون البوردر */
+  opacity: 1;
+}
+
+.all-cards li span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+.all-cards li p {
+  color: #777;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.all-cards li button {
+  border-radius: 5px;
+  width: 70%;
+  border: none;
+  background-color: #e1e2f6;
+  font-size: 13px;
+  font-weight: bold;
+  color: #565acf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pics-section {
+  width: 100%;
+  background-image: url("../pic/home-back.png");
+  margin-top: 150px;
+}
+.pics {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-move {
+  display: flex;
+}
+.together {
+  display: flex;
+}
+.mobile,
+.girl {
+  flex: 1;
+  height: 600px;
+}
+.no-mrg {
+  margin: 0 15px 0 15px !important;
+  width: 100% !important;
+}
+.girl {
+  display: flex;
+  margin: 185px 0 0 -250px;
+  height: 400px;
+  animation: move;
+  animation: move 2s infinite alternate;
+}
+.img-group {
+  position: relative;
+}
+
+.sah {
+  position: absolute;
+  right: 650px;
+  animation: mover 4s infinite alternate;
+}
+.location {
+  position: absolute;
+  right: 560px;
+  top: 280px;
+  border-bottom: 0 !important;
+  animation: mover 4s infinite alternate;
+}
+.heart {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  animation: mover 4s infinite alternate;
+}
+
+.btm-th {
+  margin-top: 150px;
+}
+.khadamat span {
+  background-image: url(../pic/hash.png);
+  width: 25%;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+.khadamat h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  margin-top: 15px;
+  font-size: 3rem;
+}
+.khadamat p {
+  color: #777;
+  margin-top: 15px;
+}
+.khadamat button {
+  margin-top: 30px;
+  border: none;
+  background-color: var(--second-color);
+  color: white;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.row-cards {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.row-cards .card {
+  position: relative;
+  margin-left: 15px;
+  border-radius: 20px;
+  background-image: url("../pic/backboka.png");
+}
+.card-text {
+  font-size: 12px !important;
+  line-height: 1.2;
+}
+.card button {
+  background-color: #e1e2f6 !important;
+  border: none !important;
+}
+
+.row-cards::after {
+  position: absolute;
+  content: "";
+  background-color: #565acf;
+  width: 100%;
+  height: 500px;
+  top: -80px;
+  left: 150px;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.mt {
+  margin-top: 150px;
+}
+.testimonial {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.news-section {
+  margin-bottom: 10%;
+}
+.testimonial span,
+.news-section span {
+  background-image: url(../pic/hash.png);
+  width: 10%;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.testimonial h3 {
+  color: var(--main-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.left-sec {
+  display: flex;
+  background-image: url("../pic/sodasi.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.testimonial-photos img {
+  display: block;
+  border-radius: 50px !important;
+  max-width: 60px;
+}
+.team1,
+.team2 {
+  display: flex;
+}
+.asmaa,
+.amira {
+  margin-left: 180px;
+}
+.amira {
+  margin-top: 25px;
+}
+.team1 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mostafa {
+  margin-left: 30px;
+}
+.amir {
+  margin-left: 260px;
+}
+.team2 {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.galal {
+  margin-left: 30px;
+}
+.full-sec {
+  display: flex;
+  align-items: center;
+}
+.right-sec {
+  width: 100%;
+}
+.testimonial-desc {
+  background-color: var(--second-color);
+  border-radius: 40px;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+  font-size: 600;
+}
+
+.quote-left {
+  position: absolute;
+  background-color: white;
+  font-size: 4rem;
+  top: 150px;
+  left: 55%;
+  border: 15px solid white;
+  border-radius: 20px;
+  color: var(--second-color);
+}
+.quote-right {
+  width: 100%;
+  margin-left: 560px;
+  font-size: 6rem;
+  color: rgba(237, 172, 152, 0.708);
+  padding: 0 15px 20 0;
+}
+.testimonial-desc p {
+  color: white;
+  font-style: italic;
+}
+.testimonial-desc h4 {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 2;
+}
+
+button.slick-arrow {
+  display: none !important;
+}
+
+.cardoda {
+  max-width: 20rem;
+}
+div.slick-list {
+  width: 80%;
+  margin: auto;
+}
+
+/* موبايل صغير */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  .doctor {
+    max-width: 200px;
+  }
+  .square {
+    max-width: 90px;
+    position: absolute;
+    top: 5.5%;
+  }
+  .plus{
+    display: none;
+  }
+
+  .send {
+    max-width: 50px !important;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .frist-row img,
+  .sec-row img,
+  .experience {
+    max-width: 150px;
+  }
+  .sec-row img {
+    height: 130px !important;
+  }
+  .experience {
+    max-height: 150px;
+    font-size: 0.8rem !important;
+  }
+  .experience::after {
+    height: 150px !important;
+  }
+  .experience h2 {
+    font-size: 2rem !important;
+  }
+  span.about-us,
+  .khadamat span,
+  .testimonial span,
+  .news-section span {
+    width: 100%;
+    margin: 10% auto;
+    text-align: center;
+  }
+  .sections-one li span,
+  .sections-two li span {
+    font-size: 0.9rem !important;
+  }
+  .working-process {
+    width: 100%;
+  }
+  .all-cards li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .all-cards {
+    display: block;
+    padding: 0;
+  }
+  .all-cards li h2 {
+    color: white;
+  }
+  .pics{
+    display: block;
+  }
+  .mobile {
+    max-width: 450px;
+    max-height: 450px;
+    position: relative;
+  }
+  .girl {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 135px;
+  }
+  .img-group .heart {
+    display: block;
+    max-width: 90px;
+    position: absolute;
+    left: -110px;
+    top: 60px;
+  }
+  img.mfk {
+    display: none;
+  }
+  .row-cards::after {
+    margin-top: 10%;
+    height: 900px;
+  }
+
+  .right-cards li {
+    display: block;
+    margin-top: 15%;
+  }
+  .right-cards li .card {
+    margin-bottom: 5%;
+  }
+
+  .quote-left,
+  .quote-right {
+    display: none;
+  }
+  img.wave-two,
+  img.wave-three {
+    display: none;
+  }
+  h4.footer-number {
+    font-size: 0.8rem;
+  }
+  p.footer-p {
+    width: 412px;
+    font-size: 0.8rem;
+    word-wrap: break-word !important; /* يسمح للنص الطويل بالتفاف */
+    word-break: break-word; /* يكسر الكلمات الطويلة */
+    white-space: normal;
+  }
+  .footer-four form {
+    width: 80%;
+  }
+  .iconss {
+    width: 40%;
+  }
+  .news-section span{
+    margin-bottom: 0;
+  }
+  
+  .blokoka{
+    display: block !important;
+  }
+  .cardoda{
+    width: 100%;
+    margin-left: 15%;
+  }
+  .lsank{
+    width: 100% !important;
+   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  .doctor {
+    max-width: 300px;
+    margin-top: -15%;
+  }
+  .square {
+    max-width: 90px;
+    position: absolute;
+    top: 4.5%;
+    right: 5%;
+  }
+
+  .send {
+    max-width: 50px !important;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+  .plus {
+    display: none;
+  }
+  .frist-row img,
+  .sec-row img,
+  .experience {
+    max-width: 150px;
+  }
+  .sec-row img {
+    height: 130px !important;
+  }
+  .experience {
+    max-height: 150px;
+    font-size: 0.8rem !important;
+  }
+  .experience::after {
+    height: 150px !important;
+  }
+  .experience h2,
+  .khadamat h2,
+  .sec-col h2,
+  .working h3,
+  .news-section h3 {
+    font-size: 1.9rem !important;
+  }
+  span.about-us,
+  .khadamat span,
+  .testimonial span,
+  .news-section span {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+  }
+  .sections-one li span,
+  .sections-two li span {
+    font-size: 0.9rem !important;
+  }
+  .working-process {
+    width: 50%;
+  }
+
+  .all-cards li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .all-cards {
+    display: block;
+    padding: 0;
+  }
+  .all-cards li h2 {
+    color: white;
+  }
+  .testimonial h3 {
+    font-size: 1.9rem !important;
+    margin-bottom: 10%;
+  }
+  .pics{
+    display: block;
+  }
+  .mobile {
+    max-width: 450px;
+    max-height: 450px;
+    position: relative;
+  }
+  .girl {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 135px;
+  }
+  .img-group .heart {
+    display: block;
+    max-width: 90px;
+    position: absolute;
+    left: -110px;
+    top: 60px;
+  }
+  img.mfk {
+    display: none;
+  }
+  .row-cards::after {
+    margin-top: 10%;
+    height: 1000px;
+  }
+
+  .right-cards li {
+    display: block;
+    margin-top: 15%;
+  }
+  .right-cards li .card {
+    margin-bottom: 5%;
+  }
+  .quote-left,
+  .quote-right {
+    display: none;
+  }
+  img.wave-two {
+    display: none;
+  }
+  h4.footer-number {
+    font-size: 0.8rem;
+  }
+  p.footer-p {
+    width: 412px;
+    font-size: 0.8rem;
+    word-wrap: break-word !important; /* يسمح للنص الطويل بالتفاف */
+    word-break: break-word; /* يكسر الكلمات الطويلة */
+    white-space: normal;
+  }
+  .footer-four form {
+    width: 80%;
+  }
+  .iconss {
+    width: 40%;
+  }
+  .lsank{
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  h2 {
+    font-size: 2.2rem !important;
+    font-weight: bold;
+  }
+  .doctor {
+    max-width: 350px;
+  }
+  .square {
+    max-width: 90px;
+    position: absolute;
+    top: 4.5%;
+  }
+  .plus {
+    margin-left: 30%;
+  }
+
+  .send {
+    max-width: 90px !important;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .frist-row img,
+  .sec-row img,
+  .experience {
+    max-width: 250px;
+  }
+  .sec-row img {
+    height: 200px !important;
+  }
+  .experience {
+    max-height: 200px;
+    font-size: 1.2rem !important;
+  }
+  .experience::after {
+    height: 200px !important;
+  }
+  .experience h2 {
+    font-size: 4rem !important;
+  }
+  span.about-us,
+  .khadamat span,
+  .testimonial span,
+  .news-section span {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+  }
+  .sections-one li span,
+  .sections-two li span {
+    font-size: 1.2rem !important;
+  }
+  .working-process {
+    width: 50%;
+  }
+  .all-cards li {
+    margin: 10% auto;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .all-cards {
+    display: block;
+    padding: 0;
+  }
+  .all-cards li h2 {
+    color: white;
+  }
+  .mobile-move {
+    margin-top: 15% !important ;
+  }
+  .mobile {
+    max-width: 450px;
+    max-height: 600px;
+    position: relative;
+  }
+  
+  .girl {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 183px;
+  }
+  .img-group .heart {
+    display: block;
+    max-width: 110px;
+    position: absolute;
+    left: -140px;
+    top: 120px;
+  }
+  .sah {
+    right: 500px;
+  }
+  img.location{
+    display: none;
+  }
+
+  .row-cards::after {
+    margin-top: 10%;
+    height: 900px;
+  }
+
+  .right-cards li {
+    display: block;
+    margin-top: 15%;
+  }
+  .right-cards li .card {
+    margin-bottom: 5%;
+  }
+
+  .khadamat span {
+    width: 30% !important;
+  }
+  .quote-left,
+  .quote-right {
+    display: none;
+  }
+  .left-sec {
+    margin: 5% auto auto 15% !important;
+  }
+  h4.footer-number {
+    font-size: 0.8rem;
+  }
+  p.footer-p {
+    width: 412px;
+    font-size: 0.8rem;
+    word-wrap: break-word !important; /* يسمح للنص الطويل بالتفاف */
+    word-break: break-word; /* يكسر الكلمات الطويلة */
+    white-space: normal;
+  }
+  .footer-four form {
+    width: 80%;
+  }
+  .iconss {
+    width: 40%;
+  }
+ .lsank{
+  width: 100% !important;
+ }
+
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .lsank{
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  h2 {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  .doctor {
+    max-width: 400px;
+    margin-left: -15px;
+  }
+  .square {
+    max-width: 90px;
+    position: absolute;
+    top: 1%;
+  }
+
+  .send {
+    max-width: 90px !important;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .plus {
+    top: 10%;
+  }
+  .frist-row img,
+  .sec-row img,
+  .experience {
+    max-width: 200px;
+  }
+  .sec-row img {
+    height: 130px !important;
+  }
+  .experience {
+    max-height: 150px;
+    font-size: 0.8rem !important;
+  }
+  .experience::after {
+    height: 150px !important;
+  }
+  .experience h2 {
+    font-size: 2rem !important;
+  }
+  span.about-us,
+  .khadamat span,
+  .testimonial span,
+  .news-section span,
+  .working-process {
+    width: 30%;
+    margin: 10% auto;
+    text-align: center;
+  }
+  .sections-one li span,
+  .sections-two li span {
+    font-size: 0.9rem !important;
+  }
+
+  .all-cards li {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .all-cards {
+    padding: 0;
+    margin-left: 10%;
+  }
+  .all-cards li h2 {
+    color: white;
+  }
+  .mobile {
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+  }
+  .girl {
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 135px;
+  }
+  .mobile-move {
+    width: 100% !important;
+  }
+  .booking {
+    width: 45% !important;
+    
+  }
+  
+  .pics {
+    display: flex;
+   
+  }
+  .sah {
+    display: none;
+  }
+  .img-group .heart {
+    display: block;
+    max-width: 90px;
+    position: absolute;
+    left: -110px;
+    top: 60px;
+  }
+  img.mfk {
+    display: none;
+  }
+  .khadamat {
+    width: 100% !important;
+  }
+  .row-cards::after {
+    margin-top: 10%;
+    height: 400px;
+  }
+
+  .right-cards li {
+    display: flex;
+    margin-top: 15%;
+    width: 900px;
+  }
+  .right-cards li .card {
+    margin-bottom: 5%;
+  }
+
+  .quote-left,
+  .quote-right {
+    display: none;
+  }
+  img.wave-two,
+  img.wave-three {
+    display: none;
+  }
+  h4.footer-number {
+    font-size: 0.8rem;
+  }
+  p.footer-p {
+    width: 412px;
+    font-size: 0.8rem;
+    word-wrap: break-word !important; /* يسمح للنص الطويل بالتفاف */
+    word-break: break-word; /* يكسر الكلمات الطويلة */
+    white-space: normal;
+  }
+  .footer-four form {
+    width: 80%;
+  }
+  .iconss {
+    width: 60%;
+  }
+  
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .send {
+    left: 35%;
+    top: 10%;
+  }
+  .square {
+    top: 5%;
+  }
+  .frist-row img,
+  .sec-row img,
+  .experience {
+    max-width: 250px;
+  }
+  .sec-row img {
+    height: 200px !important;
+  }
+  .experience {
+    max-height: 200px;
+    font-size: 1rem !important;
+  }
+  .experience::after {
+    height: 200px !important;
+  }
+  .experience h2 {
+    font-size: 4rem !important;
+  }
+  button.btn.btn-primary {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+

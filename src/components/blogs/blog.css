@@ -1,0 +1,295 @@
+.card{
+    transition: all ease 0.8s;
+}
+.card-body{
+    padding: 0 !important;
+}
+
+.blog .cards-ul li{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.blog .cards-ul li .card{
+    margin-left: 30px;
+    height: 500px;
+}
+.sm-pad{
+    padding: 25px !important;
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    text-align: center;
+    padding: 0;
+}
+.details li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.details img{
+    display: inline-block;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.who-dr a{
+    display: flex;
+    font-size: 0.8rem;
+}
+.who-dr a span{
+    margin-left: 5px;
+    color: var(--second-color);
+}
+li.who-dr{
+    margin-right: 0 !important;
+}
+.date{
+    display: flex;
+    color: var(--second-color);
+    margin-left: 15px;
+}
+.date span{
+    font-size: 15px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+
+
+}
+
+.card-img{
+    max-width: 150px;
+}
+
+.img-sec-cards{
+    width: 100% !important;
+    height: 200px;
+}
+.card-text{
+    margin-top: 15px;
+    height: 60px;
+}
+.card-body button{
+    display: flex;
+    margin-bottom: -10px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #565acf;
+    border: 2px solid;
+    transition: all ease 0.5s;
+    width: 60%;
+}
+.card-body button:hover{
+    cursor: pointer;
+    background-color: #565acf !important;
+    border:2px solid #565acf !important;
+    
+
+}
+
+.chevro-icon{
+    display: inline-block;
+    background-color: #565acf;
+    color: white;
+    border: 8px solid #565acf;
+    text-align: center;
+    margin-top: -2px;
+    border-radius: 4px;
+}
+
+.bools ul  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+.bools ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    border: 2px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 100%;
+    transition: all ease 0.5s;
+}
+.bools ul li{
+    color: #565acf;
+}
+
+.number, .prev, .nxt{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.prev,.nxt{
+    width: 80px !important;
+}
+.active {
+    color: white !important;
+
+}
+.active{
+    background-color: #565acf !important;
+}
+
+.bools ul li:hover{
+    background-color: #565acf;
+    color: white;
+}
+
+
+
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    .frist-row, .sec-row, .third-row{
+        display: block !important;
+    }
+    .sm-pad.card{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .card-img-top{
+        max-width: 100% !important;
+        max-height: 50% !important;
+    }
+    .who-dr a img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    img.card-img-top.sora{
+        width: 100% !important;
+        height: 50% !important;
+        
+    }
+  }
+  
+  /* موبايل متوسط / كبير */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  
+    .frist-row, .sec-row, .third-row{
+        display: block !important;
+    }
+    .sm-pad.card{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .card-img-top{
+        max-width: 100% !important;
+        max-height: 50% !important;
+    }
+    .who-dr a img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    img.card-img-top.sora{
+        width: 100% !important;
+        height: 50% !important;
+        
+    } 
+    
+ }
+  
+  /* تابلت */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+  
+    
+    .sm-pad.card{
+        width: 100%;
+        margin-bottom: 10%;
+        margin-left: 1% !important;
+    }
+    .card-img-top{
+        max-width: 100% !important;
+        max-height: 50% !important;
+    }
+    .who-dr a img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    img.card-img-top.sora{
+        width: 100% !important;
+        height: 50% !important;
+        
+    }  
+    ul.details{
+        display: block !important;
+    }
+    li.who-dr{
+        width: 100%;
+    }
+    .date{
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .parag{
+        font-size: 1.1rem !important;
+        height: 100px;
+    }
+    .mea{
+        width: 100% !important;
+    }
+   
+ }
+  
+  /* لابتوب */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+  
+    .sm-pad.card{
+        width: 100%;
+        margin-bottom: 10%;
+        margin-left: 1% !important;
+    }
+    .card-img-top{
+        max-width: 100% !important;
+        max-height: 50% !important;
+    }
+    .who-dr a img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    img.card-img-top.sora{
+        width: 100% !important;
+        height: 50% !important;
+        
+    }  
+    ul.details{
+        display: block !important;
+    }
+    li.who-dr{
+        width: 100%;
+        height: 20px;
+    }
+    .date{
+        margin-left: 0 !important;
+        width: 100%;
+        height: 20px;
+    }
+    .parag{
+        height: 50px;
+    }
+    
+    .mea{
+        width: 100% !important;
+
+    } }
+  
+  /* شاشات كبيرة */
+  @media screen and (min-width: 1201px) and (max-width: 1600px) {
+  
+    /* CSS هنا */
+  }

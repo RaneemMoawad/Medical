@@ -1,0 +1,95 @@
+.login{
+    width: 100%;
+    background-color: #f5f5fc;
+    height: 100vh;
+    position: relative;
+}
+.login-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22%;
+    padding: 40px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+}
+.login-logo{
+    width: 100%;
+}
+.login-logo img{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.username{
+    margin-top: 80px;
+}
+.username, .pass{
+    margin-bottom: 30px;
+}
+
+.login-section form{
+    margin-top: 35px;
+    line-height: 50px;
+}
+.form-control{
+    height: 60px;
+    border: 1px solid #565acf !important;
+}
+.login-section button{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    line-height: 35px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s !important;
+}
+a.forgot,
+.question{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login-btn{
+    background-color: #565acf !important;
+}
+.login-btn:hover{
+    background-color: #b0b3f6 !important;
+}
+
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+    .login-section{
+        width: 80%;
+    }
+ 
+}
+  
+  /* موبايل متوسط / كبير */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .login-section{
+        width: 80%;
+    }
+  }
+  
+  /* تابلت */
+  @media screen and (min-width: 769px) and (max-width: 992px) {    .login-section{
+        width: 60%;
+    }  }
+  
+  /* لابتوب */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {    .login-section{
+        width: 35%;
+    }  }
+  
+  /* شاشات كبيرة */
+  @media screen and (min-width: 1201px) and (max-width: 1600px) {    .login-section{
+        width: 30%;
+    }  }
